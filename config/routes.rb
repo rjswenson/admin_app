@@ -1,4 +1,8 @@
 AdminApp::Application.routes.draw do
+  get "static_pages/index"
+  get "static_pages/create"
+  get "static_pages/modify"
+  get "static_pages/portal"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
