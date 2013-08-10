@@ -35,3 +35,11 @@ h3 {font-weight: normal; text-align:center; margin-top: 30px; font-style: italic
 
 #logo { float: left; margin-right: 10px; color: white; font-weight: bold;
     line-height: 1; padding-top: 10px; font-size:1.5em; text-transform: uppercase;}
+
+
+
+/* forms */
+
+#error_explanation {color: red;}
+
+.field_with_errors {@extend .control-group; @extend .error}
