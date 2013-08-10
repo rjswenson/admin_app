@@ -1,0 +1,37 @@
+@import "bootstrap";
+
+
+
+/* universal stuff */
+
+body { padding-top: 50px;}
+
+section {overflow: auto;}
+
+textarea {resize: vertical;}
+
+html {overflow-y: scroll;}
+
+.center {text-align: center;}
+
+.center h1 {margin-bottom: 15px;}
+
+
+
+/* type */
+
+
+h1 {letter-spacing: -2px; text-align: center }
+h2 {font-size: 1.3em; margin-bottom: 10px; font-weight: normal;
+  color: grey;}
+
+p {font-size: 1.1em; line-height: 1.7em;}
+
+h3 {font-weight: normal; text-align:center; margin-top: 30px; font-style: italic;
+   letter-spacing: -1px;}
+
+
+/* header */
+
+#logo { float: left; margin-right: 10px; color: white; font-weight: bold;
+    line-height: 1; padding-top: 10px; font-size:1.5em; text-transform: uppercase;}
