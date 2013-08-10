@@ -1,4 +1,6 @@
 AdminApp::Application.routes.draw do
+  resources :users
+  
   get "static_pages/index"
   get "static_pages/create"
   get "static_pages/modify"
