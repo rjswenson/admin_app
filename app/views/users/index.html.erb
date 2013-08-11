@@ -1,28 +1,29 @@
 <% provide(:title, 'Manifest') %>
-<h1> Welcome to the Manifest </h1>
-<h2> Below is a list of all users </h2>
+<div class="center">
+  <h1> Welcome to the Manifest </h1>
+  <h2> Below is a list of all users </h2>
 
 
-<table class="users">
-  <tr>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Email Address</th>
-  </tr>
-  <% @users.each do |user| %>
+  <table class="user_table">
     <tr>
-      <td> <%= user.first_name %> </td>
-      <td> <%= user.last_name %> </td>
-      <td> <%= user.email %> </td>
-      <td> <%= link_to "[edit]" ,  edit_user_path(user) %> </td>
-      <td> <%= link_to "[delete]" , user, method: :delete, data: {confirm: "You sure?"} %> </td>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email Address</th>
     </tr>
-  <% end %>
-</table>
+    <% @users.each do |user| %>
+      <tr>
+        <td> <%= user.first_name %> </td>
+        <td> <%= user.last_name %> </td>
+        <td> <%= user.email %> </td>
+        <td class="outlie"> <%= link_to "[edit]" ,  edit_user_path(user) %> </td>
+        <td class="outlie"> <%= link_to "[delete]" , user, method: :delete, data: {confirm: "You sure?"} %> </td>
+      </tr>
+    <% end %>
+  </table>
 
-<div id="new_button">
-  <%= link_to "Create a User", '/users/new' , class: "center btn btn-large btn-primary" %>
+  <div id="new_button">
+    <%= link_to "Create a User", '/users/new' , class: "btn btn-large btn-primary" %>
+  </div>
 </div>
-
 
   
