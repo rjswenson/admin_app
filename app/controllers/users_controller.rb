@@ -21,13 +21,20 @@
 
   def destroy #deletes a user DELETE
     User.find(params[:id]).destroy
-    redirect_to '/users'
+    redirect_to :users
   end
 
   def edit #show edit update form GET
+    @user = User.find(params[:id])
   end
 
   def update #send data to database PATCH
+    @user = User.find(params[:id])
+    if @user.update_attributes(user_params)
+      redirect_to :users
+    else
+      render 'edit'
+    end
   end
 
   private

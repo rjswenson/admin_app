@@ -14,7 +14,7 @@
       <td> <%= user.first_name %> </td>
       <td> <%= user.last_name %> </td>
       <td> <%= user.email %> </td>
-      <td> <%= link_to "[edit]" , '/user.id/edit' %> </td>
+      <td> <%= link_to "[edit]" ,  edit_user_path(user) %> </td>
       <td> <%= link_to "[delete]" , user, method: :delete, data: {confirm: "You sure?"} %> </td>
     </tr>
   <% end %>
