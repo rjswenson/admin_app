@@ -1,7 +1,37 @@
--# User Adjuster Application #-
+##### Admin Console (User Modifier) #####
 
-Generate a Rails app that allows a user to create, edit, update, and destroy (delete) users. Users should have first name, last name, and 
-email address fields. Deploy this app to Heroku 
-(a free *.herokuapp.com URL) so we can test it out live. 
-If you have time, add extra features to this app (be creative) and 
-tell us what you did so we don’t miss it. 
+--## Welcome! ##--
+
+This project includes: Rails / Gems (Bootstrap) / HEROKU!!
+
+http://boiling-falls-6936.herokuapp.com/
+
+Spec:
+
+   Generate a Rails app that allows a user to create, edit, update, and destroy (delete) users. Users should have first name, last name, and 
+   email address fields. Deploy this app to Heroku 
+   (a free *.herokuapp.com URL) so we can test it out live. 
+   If you have time, add extra features to this app (be creative) and 
+   tell us what you did so we don’t miss it. 
+
+Functionality:
+
+   +User controller with routes for create/edit/update/destroy
+
+   +db functionality with new user creation (first, last, email)
+   +partial file '_error_messages' which lists errors if form is not filled out
+   +User class contains validations
+
+   +Form editibility with pre-filled forms and easy changing
+
+   +moderately dynamic title (changes to Create, Manifest, Edit User)
+
+   +secure_token.rb 'initializer' modified to appropriately protect site
+   +private method in controller '#user_params' which restricts users from
+    brute-force rewriting user hash with admin rights (if I had admin functionality)
+
+   +Heroku hosting
+
+
+Robin: github.com/rjswenson
+
